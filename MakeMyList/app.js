@@ -5,7 +5,7 @@ const ejs = require("ejs");
 const path = require("path");
 const _ = require("lodash");
 
-//const PORT=process.env.PORT||5005
+const PORT=process.env.PORT||5005
 // Passport Requirements
 
 const session = require("express-session");
@@ -251,6 +251,6 @@ app.post("/delete", function (req, res) {
 
 
 
-app.listen(5005, function () {
-  console.log("Server Started on PORT 5005");
+app.listen(process.env.PORT || 5005, function () {
+  console.log(PORT,"Server Started on PORT 5005");
 });
