@@ -250,7 +250,7 @@ app.post("/delete", function (req, res) {
 
 
 
-
 app.listen(process.env.PORT || 5005, function () {
-  console.log(PORT,"Server Started on PORT 5005");
+  console.log(PORT,"Server Started on PORT 5005 working",this.address().port, app.settings.env);
 });
+
